@@ -81,4 +81,10 @@ setInterval( function(){
         
         score.innerHTML=0; 
     } 
+    if(result>max)
+    {
+        max=result;
+        highscore.innerHTML = max;
+    }
+    else{highscore.textContent =max; }  
 }, 1000);
