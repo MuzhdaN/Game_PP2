@@ -106,3 +106,23 @@ function move() {
     }, 2000);
 }
 move();
+
+var popupWindow = document.getElementById('popupWindow');
+var rulesContent = document.querySelector('.rules-content');
+var btn = document.querySelector('.rules-btn');
+var closeRules = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    popupWindow.style.display = "block";
+    rulesContent.style.display="block";
+}
+
+closeRules.onclick = function() {
+    popupWindow.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == popupWindow) {
+        popupWindow.style.display = "none";
+    }
+}
