@@ -24,12 +24,12 @@ for(let i=1; i<=12; i++){
     //adding fence image at the bottom of each box
     let fence = document.createElement("img");
     fence.classList.add("fence");
-    fence.src = "assets/images/fence.png";
+    fence.src = "assets/images/fence.webp";
     box.appendChild(fence);
 
     let character = document.createElement("img");
     character.classList.add("character");
-    character.src = "assets/images/Bugs_Bunny.svg.png";
+    character.src = "assets/images/bunny.webp";
     character.setAttribute("name", "rab");
     box.appendChild(character);
 }
