@@ -33,3 +33,12 @@ for(let i=1; i<=12; i++){
     character.setAttribute("name", "rab");
     box.appendChild(character);
 }
+
+startBtn.addEventListener("click", () => {
+    canvas.classList.add("canvasClose");
+    for (var i=0;i<header.length;i+=1){
+        header[i].style.display = 'flex';
+      }
+      timer = 10;
+      result = 0;    
+});
