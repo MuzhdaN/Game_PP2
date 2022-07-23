@@ -106,4 +106,61 @@ h1 {
     font-size: 3.5rem;
 }
 
+button {
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    font-weight: 700;
+    font-size: 2rem;
+    /* padding-bottom: 0.4rem; */
+    text-align: center;
+}
+
+button, 
+.highscore-text {
+    padding: 10px 35px;
+    border-radius: 8px;
+    background: #2789b0;
+    margin: 0.6rem auto;
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.highscore-text {
+    background: #25a6d9;
+}
+
+button:hover,
+.highscore-text:hover {
+    font-size: 27px;
+    background-color: rgb(91, 198, 241);
+}
+
+
+.game-start {
+    bottom: 7%;
+    position: relative;
+}
+
+.game-over {
+    display: none;
+    font-size: 45px;
+    color: black;
+    font-weight: 700;
+    /* padding-bottom: 2rem; */
+    position: relative;
+    bottom: 15%;
+}
+.game-over a {
+    position: relative;
+    bottom: 70%;
+}
+
+.highscore-text {
+    display: none;
+}
+
 
