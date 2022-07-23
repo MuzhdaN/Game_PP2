@@ -88,3 +88,21 @@ setInterval( function(){
     }
     else{highscore.textContent =max; }  
 }, 1000);
+
+function move() {
+    setInterval(function() {
+        const rab = document.querySelectorAll('.character');
+
+        let chose = Math.floor(Math.random() * rab.length);
+        rab[chose].style.pointerEvents = "all";
+        rab[chose].style.animation = "up 2s ease";
+        rab[chose].addEventListener("animationend", () => {
+            rab[chose].style.pointerEvents = "all";
+            rab[chose].style.animation = "down 2s ease";
+            rab[chose].addEventListener("animationend", () => {
+                rab[chose].style.pointerEvents = "none";      
+            });
+        });
+    }, 2000);
+}
+move();
