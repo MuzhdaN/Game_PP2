@@ -46,7 +46,7 @@ startBtn.addEventListener("click", () => {
 //when cliking the rabbit score will increase by 1
 window.addEventListener("click", (e) => {
     if(e.target.name === "rab") {
-            mySound = new Audio('assets/audio/ltmi_060.mp3');
+            mySound = new Audio('assets/audio/hit.mp3');
             mySound.play();
         
        result++;
