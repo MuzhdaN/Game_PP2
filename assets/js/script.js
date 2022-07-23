@@ -53,3 +53,32 @@ window.addEventListener("click", (e) => {
        score.textContent = result;
     }
 });
+
+setInterval( function(){
+    let over = document.querySelector(".game-over");
+    let text = document.querySelector('.canvas h2');
+    let h1 = document.querySelector('.canvas h1');
+    timer--;
+
+    if (timer>=0){
+        timeLeft.innerHTML = timer;
+    }
+    if (timer === 0) {
+        // for (var i=0;i<header.length;i+=1){
+        //     header[0].style.display = 'block';
+        //   }
+        canvas.classList.remove("canvasClose");
+        over.style.display ="block";
+        startBtn.style.visibility = "visible";
+        startBtn.textContent = "Try Again";
+        text.style.display="none";
+        h1.style.display="none";   
+        highscoreText.style.display = "block";
+        instructions.style.display="none";
+        // homeLink.style.display="block";
+        header.classList.add("right-side");
+        const h = document.createElement('header');
+        
+        score.innerHTML=0; 
+    } 
+}, 1000);
