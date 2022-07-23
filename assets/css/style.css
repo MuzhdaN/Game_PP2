@@ -198,3 +198,34 @@ button:hover,
     text-decoration: none;
     cursor: pointer;
 }
+
+/* media queries */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    header {
+        font-size: 1.6rem;
+    }
+    
+    .container {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px 70px;
+        margin-top: 2rem;
+    }
+
+    .box {
+        height: 130px;
+        width: 130px;
+    }
+    #popupWindow {
+        padding-top: 18rem; 
+    }
+    
+    .rules-content {
+        width: 50%;
+        padding: 4rem;
+    }
+}
