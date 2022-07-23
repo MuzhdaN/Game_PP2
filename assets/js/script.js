@@ -2,8 +2,8 @@ const container = document.querySelector('.container');
 const boxes = document.querySelectorAll('.box');
 const timeLeft = document.getElementById("time-left")
 const score = document.querySelector('.score');
-const startBtn = document.querySelector('.modal button');
-const canvas = document.querySelector(".modal");
+const startBtn = document.querySelector('.canvas button');
+const canvas = document.querySelector(".canvas");
 const header = document.querySelectorAll('header');
 
 // score
