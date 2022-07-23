@@ -204,6 +204,24 @@ button:hover,
     cursor: pointer;
 }
 
+/* animation */
+@keyframes up {
+    from {
+        transform: translateY(140px);
+    }
+    to {
+        transform: translateY(-130px);
+    }
+}
+@keyframes down {
+    from {
+        transform: translateY(-130px);
+    }
+    to {
+        transform: translateY(140px);
+    }
+}
+
 /* media queries */
 @media only screen and (min-width: 992px) {
     h1 {
