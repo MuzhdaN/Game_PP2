@@ -107,14 +107,14 @@ btn.onclick = function() {
     let rulesContent = document.querySelector('.rules-content');
     popupWindow.style.display = "block";
     rulesContent.style.display="block";
-}
+};
 
 closeRules.onclick = function() {
     popupWindow.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
     if (event.target == popupWindow) {
         popupWindow.style.display = "none";
     }
-}
+};
