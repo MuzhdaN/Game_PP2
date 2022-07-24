@@ -1,14 +1,8 @@
+const HIT_SOUND = new Audio('assets/audio/hit.mp3');
 let startBtn = document.querySelector('.canvas button');
 let canvas = document.querySelector(".canvas");
 let header = document.querySelectorAll('header');
 let score = document.querySelector('.score');
-
-// score
-let highscore = document.querySelector(".highscore");
-let highscoreText = document.querySelector(".highscore-text");
-let instructions = document.querySelector('.game-start .rules-btn');
-let homeLink = document.querySelector('.right-side a');
-
 let result = 0;
 let timer;
 let max=0;
@@ -50,9 +44,7 @@ function startGame() {
 //when cliking the rabbit score will increase by 1
 window.addEventListener("click", (e) => {
     if(e.target.name === "rab") {
-            mySound = new Audio('assets/audio/hit.mp3');
-            mySound.play();
-        
+            HIT_SOUND.play();       
        result++;
        score.textContent = result;
     }
@@ -62,6 +54,9 @@ setInterval( function(){
     let gameOverText = document.querySelector(".game-over");
     let title = document.querySelector('.canvas h1');
     let timeLeft = document.getElementById("time-left");
+    let highscore = document.querySelector(".highscore");
+    let highscoreDiv = document.querySelector(".highscore-text");
+    let instructions = document.querySelector('.game-start .rules-btn');
     timer--;
 
     if (timer>=0){
@@ -73,7 +68,7 @@ setInterval( function(){
         startBtn.style.visibility = "visible";
         startBtn.textContent = "Try Again";
         title.style.display="none";   
-        highscoreText.style.display = "block";
+        highscoreDiv.style.display = "block";
         instructions.style.display="none";
         score.innerHTML=0; 
     } 
@@ -87,7 +82,7 @@ setInterval( function(){
 
 function move() {
     setInterval(function() {
-        const rab = document.querySelectorAll('.character');
+        let rab = document.querySelectorAll('.character');
 
         let chose = Math.floor(Math.random() * rab.length);
         rab[chose].style.pointerEvents = "all";
