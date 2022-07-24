@@ -3,6 +3,11 @@ let startBtn = document.querySelector('.canvas button');
 let canvas = document.querySelector(".canvas");
 let header = document.querySelectorAll('header');
 let score = document.querySelector('.score');
+
+let popupWindow = document.getElementById('popupWindow');
+let btn = document.querySelector('.rules-btn');
+let closeRules = document.getElementsByClassName("close")[0];
+
 let result = 0;
 let timer;
 let max=0;
@@ -98,12 +103,7 @@ function move() {
 }
 move();
 
-let popupWindow = document.getElementById('popupWindow');
-
-let closeRules = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {  
-    let btn = document.querySelector('.rules-btn'); 
+btn.onclick = function() {   
     let rulesContent = document.querySelector('.rules-content');
     popupWindow.style.display = "block";
     rulesContent.style.display="block";
