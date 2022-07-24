@@ -155,7 +155,6 @@ button:hover,
     font-size: 45px;
     color: black;
     font-weight: 700;
-    /* padding-bottom: 2rem; */
     position: relative;
     bottom: 15%;
 }
@@ -189,7 +188,7 @@ button:hover,
     border-radius: 10px;
 }
 
-  /* The Close Button */
+  /* Close Button */
 .close {
     color: #aaaaaa;
     float: right;
