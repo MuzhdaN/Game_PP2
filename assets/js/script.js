@@ -16,32 +16,41 @@ let result = 0;
 let timer;
 let max=0;
 
-for(let i=1; i<=12; i++){
-    let box = document.createElement("div");
-    box.classList.add("box");
-    container.appendChild(box);
+window.addEventListener('DOMContentLoaded',  initializeGame);
 
-    //adding fence image at the bottom of each box
-    let fence = document.createElement("img");
-    fence.classList.add("fence");
-    fence.src = "assets/images/fence.webp";
-    box.appendChild(fence);
-
-    let character = document.createElement("img");
-    character.classList.add("character");
-    character.src = "assets/images/bunny.webp";
-    character.setAttribute("name", "rab");
-    box.appendChild(character);
+function initializeGame() {
+    let container = document.querySelector('.container');
+    startBtn.addEventListener("click", startGame);
+    
+    for(let i=1; i<=12; i++){
+        let box = document.createElement("div");
+        box.classList.add("box");
+        container.appendChild(box);
+    
+        //adding fence image at the bottom of each box
+        let fence = document.createElement("img");
+        fence.classList.add("fence");
+        fence.src = "assets/images/fence.webp";
+        box.appendChild(fence);
+    
+        var character = document.createElement("img");
+        character.classList.add("character");
+        character.src = "assets/images/bunny.webp";
+        character.setAttribute("name", "rab");
+        box.appendChild(character);
+    }
 }
 
-startBtn.addEventListener("click", () => {
+function startGame() {
     canvas.classList.add("canvasClose");
-    for (var i=0;i<header.length;i+=1){
+    for (let i=0;i<header.length;i+=1){
         header[i].style.display = 'flex';
       }
       timer = 10;
       result = 0;    
-});
+}
+
+
 
 //when cliking the rabbit score will increase by 1
 window.addEventListener("click", (e) => {
