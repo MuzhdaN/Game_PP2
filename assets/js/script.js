@@ -98,12 +98,13 @@ function move() {
 }
 move();
 
-var popupWindow = document.getElementById('popupWindow');
-var rulesContent = document.querySelector('.rules-content');
-var btn = document.querySelector('.rules-btn');
-var closeRules = document.getElementsByClassName("close")[0];
+let popupWindow = document.getElementById('popupWindow');
 
-btn.onclick = function() {
+let closeRules = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {  
+    let btn = document.querySelector('.rules-btn'); 
+    let rulesContent = document.querySelector('.rules-content');
     popupWindow.style.display = "block";
     rulesContent.style.display="block";
 }
