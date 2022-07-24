@@ -1,16 +1,15 @@
-const container = document.querySelector('.container');
-const boxes = document.querySelectorAll('.box');
-const timeLeft = document.getElementById("time-left")
-const score = document.querySelector('.score');
-const startBtn = document.querySelector('.canvas button');
-const canvas = document.querySelector(".canvas");
-const header = document.querySelectorAll('header');
+
+let timeLeft = document.getElementById("time-left");
+let score = document.querySelector('.score');
+let startBtn = document.querySelector('.canvas button');
+let canvas = document.querySelector(".canvas");
+let header = document.querySelectorAll('header');
 
 // score
-const highscore = document.querySelector(".highscore");
-const highscoreText = document.querySelector(".highscore-text");
-const instructions = document.querySelector('.game-start .rules-btn');
-const homeLink = document.querySelector('.right-side a');
+let highscore = document.querySelector(".highscore");
+let highscoreText = document.querySelector(".highscore-text");
+let instructions = document.querySelector('.game-start .rules-btn');
+let homeLink = document.querySelector('.right-side a');
 
 let result = 0;
 let timer;
@@ -33,7 +32,7 @@ function initializeGame() {
         fence.src = "assets/images/fence.webp";
         box.appendChild(fence);
     
-        var character = document.createElement("img");
+        let character = document.createElement("img");
         character.classList.add("character");
         character.src = "assets/images/bunny.webp";
         character.setAttribute("name", "rab");
