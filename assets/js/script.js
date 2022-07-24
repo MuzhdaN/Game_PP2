@@ -1,9 +1,7 @@
-
-let timeLeft = document.getElementById("time-left");
-let score = document.querySelector('.score');
 let startBtn = document.querySelector('.canvas button');
 let canvas = document.querySelector(".canvas");
 let header = document.querySelectorAll('header');
+let score = document.querySelector('.score');
 
 // score
 let highscore = document.querySelector(".highscore");
@@ -49,8 +47,6 @@ function startGame() {
       result = 0;    
 }
 
-
-
 //when cliking the rabbit score will increase by 1
 window.addEventListener("click", (e) => {
     if(e.target.name === "rab") {
@@ -63,30 +59,22 @@ window.addEventListener("click", (e) => {
 });
 
 setInterval( function(){
-    let over = document.querySelector(".game-over");
-    let text = document.querySelector('.canvas h2');
-    let h1 = document.querySelector('.canvas h1');
+    let gameOverText = document.querySelector(".game-over");
+    let title = document.querySelector('.canvas h1');
+    let timeLeft = document.getElementById("time-left");
     timer--;
 
     if (timer>=0){
         timeLeft.innerHTML = timer;
     }
     if (timer === 0) {
-        // for (var i=0;i<header.length;i+=1){
-        //     header[0].style.display = 'block';
-        //   }
         canvas.classList.remove("canvasClose");
-        over.style.display ="block";
+        gameOverText.style.display ="block";
         startBtn.style.visibility = "visible";
         startBtn.textContent = "Try Again";
-        text.style.display="none";
-        h1.style.display="none";   
+        title.style.display="none";   
         highscoreText.style.display = "block";
         instructions.style.display="none";
-        // homeLink.style.display="block";
-        header.classList.add("right-side");
-        const h = document.createElement('header');
-        
         score.innerHTML=0; 
     } 
     if(result>max)
