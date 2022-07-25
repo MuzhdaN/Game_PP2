@@ -2,7 +2,7 @@
 
 ## Purpose of the project
 
- Find The Bunny is a game developed for the Full Stack Software Development course in Code Institue as a second project. This is a fun and easy game for the people who want to have a 20seconds of enjoyment.
+ Find The Bunny is a game developed for the Full Stack Software Development course in Code Institue as a second project. This is a fun and easy game for the people who want to have a 20seconds of entertainment.
  I have built this game using HTML, CSS and Vanilla JavaScript.
 Visit the live [website](https://muzhdan.github.io/Game_PP2/).
   ![responsive Design Layouts](/assets/images/responisve-img.PNG)
@@ -17,8 +17,7 @@ Visit the live [website](https://muzhdan.github.io/Game_PP2/).
   * [Technology](#technology)
   *  [Testing](#testing)
       * [Validator Testing](#validator-testing)
-      * [Accessibility Testing ](#accessibility-testing )
-      * [Manual Testing](#manual-testing)
+      * [Lighthouse Testing](#lighthouse-testing)
       * [Supported Screens and Browsers](#supported-screens-and-browsers)
       * [Fixed Bugs](#fixed-bugs)
   *  [Deployment](#deployment)
@@ -162,8 +161,6 @@ Visit the live [website](https://muzhdan.github.io/Game_PP2/).
    * There was blank space at the bottom of the game.
      * Solved it by adding `top:0` in to the body in css.
 
-### Accessibility Testing 
-   * LightHouse Testing
 ## Deployment 
   This website was developed in Gitpod. It was deployed on github. 
 
@@ -178,7 +175,7 @@ Visit the live [website](https://muzhdan.github.io/Game_PP2/).
   - [FAVPNG](https://favpng.com/)
   
   ### Contents
-  - [Audio](http://www.nonstick.com/bugs-bunny-sounds/)
+  - [Audio](http://www.nonstick.com/bugs-bunny-sounds/) The audio for the game was taken from this website.
  
   
   ### Code
