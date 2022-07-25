@@ -1,108 +1,192 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Game
 
-Welcome MuzhdaN,
+## Purpose of the project
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ Find The Bunny is a game developed for the Full Stack Software Development course in Code Institue as a second project. This is a fun and easy game for the people who want to have a 20seconds of enjoyment.
+ I have built this game using HTML, CSS and Vanilla JavaScript.
+Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
+  ![responsive Design Layouts](/assets/image/responsive-template.PNG)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
+  * [Purpose of the project](#purpose-of-the-project)
+  * [User Stories](#user-stories)
+  * [Features](#features)
+  * [Future Features](#future-features)
+  * [Typography and color scheme](#typography-and-color-scheme)
+  * [Wireframes](#wireframes)
+  * [Technology](#technology)
+  *  [Testing](#testing)
+      * [Validator Testing](#validator-testing)
+      * [Accessibility Testing ](#accessibility-testing )
+      * [Manual Testing](#manual-testing)
+      * [Supported Screens and Browsers](#supported-screens-and-browsers)
+      * [Fixed Bugs](#fixed-bugs)
+  *  [Deployment](#deployment)
+  *  [Credits](#credits)
+      * [Images](#images)
+      * [Contents](#contents)
+      * [Code](#code)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-----
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## User Stories
+- as a visiting user i would like to check the rules of the game.
+- as a visiting user i would like to check to my score while hitting the rabbits.
+- as a visiting user i would like to know the timeleft for the game.
+- as a visiting user i would like to check the time.
+- as a visiting user i would like to go back to home page in the middle of the game. 
+- as a visiting user i would like to check the my score at the end of the game.
+- as a visiting user i would like to re-start the game after checking my scores.
+- as a visiting user i would like to hear a sound if i hit the rabbit.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Features
 
-A blue button should appear to click: _Make Public_,
+ ### Game Start Page
+  <details> <summary> Game Start Page Image </summary>
 
-Another blue button should appear to click: _Open Browser_.
+   ![Start Game Page](/assets/images/StartGamePage.PNG)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+   </details>
+  
+ * In this page there are two buttons:
+    * Start Button:
+        by clicking this, the user will be forwarded to the playground page.
+    * How To Play Button:
+        by clicking this, a popup window will apear where the user could get instructions about the game.
 
-To log into the Heroku toolbelt CLI:
+### Game playground
+<details> <summary>Game Canvas Image </summary>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  ![Playground Page](/assets/images/Playground.PNG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  </details>
 
-------
+ * The home option (on the right side) will take the user to the homepage (Game Start Page);
+ * In this page the user can see her score.
+ * The score will increase by one whenever the user hit the rabbit.
+ * The time is limited, therefore, the user can consistently check the time which is on the right side.
+ * The rabbit will apear and hide behind the fence. 
+ * The user needs to hit the rabbit to gain score.
+ * Whenver the rabbit is hit, there will be a sound.
 
-## Release History
+### Game Over Page
+<details> <summary> Game Over Page Image </summary>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  ![Game Over Page](/assets/images/gameOverPage.PNG)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  </details>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* This page will appear when the time is up and the game is over.
+    * The 'Try Again' button, will re-start the game.
+    * The highscore button shows the lastest score of the user.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Future Features
+- Save scores in the local storage
+- Add levels to the game
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Typography and color scheme
+  ### Typography
+  - The following google font was used for the website.
+     - `'Roboto', sans-serif;`
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  ### Color Scheme
+  - The website uses Black and White colors for fonts and #2789b0 for button.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Wireframes / Prototype
+  The intial idea was drawn in to the notbook. According to that the game was desgined in to the Figma app.
+  <details> <summary> Wireframes / prototypes </summary>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  ![Start Game Page](/assets/readme-images/wireframes/home-wireframe.png)
+  ![Game Over Page](/assets/readme-images/wireframes/receipe-wireframe.png)
+  ![Game Play Ground](/assets/readme-images/wireframes/contact-wireframe.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  </details>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Technology
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  - HTML5
+  - CSS3
+  - Javascript
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ ### Programs that were used:
+  - Figma: created the prototype / wireframes.
+  - Git
+  - Github
+  - Gitpod
+  - Google Fonts
+  - Am I responsive
+  - ezgif.com: Changed jpg to webp
+  - removebg
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Testing
+ ### Validator Testing
+* W3C HTML Validator:  No error were found
+    ![HTML Results](/assets/images/htmlValidator.PNG)
+* W3C CSS Validator (Jigsaw): No error were found
+    ![CSS Results](/assets/images/cssValidator.PNG)
+* JSHint JavaScript Validator: Testing the JS code for the first time, there were some errors regarding     semicolon at the end of the line, but they were fixed immediately.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    <details> <summary> JSHint Results </summary>
 
-**How will this affect me?**
+     ![JSHint Result](/assets/images/jshint.PNG)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    </details>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Lighthouse Testing
+  Desktop:
+    ![Lighthouse Testing in Desktop](/assets/images/lighthouseDesktop.PNG)
+  
+  Phone:
+    ![Lighthouse Testing in Mobile](/assets/images/lighthousePhone.PNG)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    * The following bug occured, but rendering css file was not a good option.
+    ![LightHouse Bug](/assets/images/bugsLH.PNG)
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Fixed bugs
+   * Header was not showing in the game playground page. In the cosole it would give error as display undefined.
+     * Solved it with the help of [stackoverflow](https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex) and another[stackoverflow problem](https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined)
+    
+   * Another console error was 'Cannot set properties of null (setting 'textContent')'.
+     * solved it with the help of stackoverflow problems that said the following
+         >  the "Cannot set property 'textContent' of null" error, make sure that the DOM element you're setting the textContent property on exists. The error most commonly occurs if you use the getElementById() method and pass it an id that is not present in the DOM. Copied! const element = document
+   * There was blank space at the bottom of the game.
+     * Solved it by adding `top:0` in to the body in css.
 
-**Can I opt out?**
+### Accessibility Testing 
+   * LightHouse Testing
+## Deployment 
+  This website was developed in Gitpod. It was deployed on github. 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+  - The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab
+    - From the source section drop-down menu, select the Master Branch
+    - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Credits
+  ### Images
+  - [Freepik](https://www.freepik.com/popular-photos)
+  - [FAVPNG](https://favpng.com/)
+  
+  ### Contents
+  - [Audio](http://www.nonstick.com/bugs-bunny-sounds/)
+ 
+  
+  ### Code
+  - [youtube](https://www.youtube.com/watch?v=ec8vSKJuZTk&t=4840s) The idea for the game was taken from this youtube video.
+  - [Blog]() The concept to implement boxes within the container in js was taken from this youtube video.
+  - [CSS Triks](https://css-tricks.com/overriding-default-button-styles/) With the help of this website I was able to remove the default properties of the button. Although I modifed it, but the idea was taken for this website.
+  - [W3school](https://www.w3schools.com/w3css/w3css_modal.asp) The concept of a poupwindow was taken from w3school. Also, The code has been refactored and changed according to the project.
+  - [Blog](https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984) & [Autoplay guide](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide) While implemeting audio in to the game, these two websites helped alot. 
+  - [Favicon](https://favicon.io/) The code for favicon links were taken from Favicon website.
+  - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event) The concept of DOMContentLoaded event that was implemented in js was taken from here.
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+ 
