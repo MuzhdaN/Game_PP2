@@ -79,10 +79,11 @@ a {
 .fence {
     position: absolute;
     pointer-events: none;
-    width: 145px;
+    width: 130px;
     object-fit: cover;
     bottom: -0.5px;
     left: -7px;
+    align-items: center;
 }
 
 .canvas {
