@@ -4,8 +4,8 @@
 
  Find The Bunny is a game developed for the Full Stack Software Development course in Code Institue as a second project. This is a fun and easy game for the people who want to have a 20seconds of enjoyment.
  I have built this game using HTML, CSS and Vanilla JavaScript.
-Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
-  ![responsive Design Layouts](/assets/image/responsive-template.PNG)
+Visit the live [website](https://muzhdan.github.io/Game_PP2/).
+  ![responsive Design Layouts](/assets/images/responisve-img.PNG)
 
 ## Table of Contents
   * [Purpose of the project](#purpose-of-the-project)
@@ -149,6 +149,8 @@ Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
 * The following bug occured, but rendering css file was not a good option for this project.
   ![LightHouse Bug](/assets/images/bugsLH.PNG)
 
+### Supported Screens and Browsers
+   * This website can work properly on Chrome, Apple Ipad Pro, Firefox, Microsoft Edge. Due to time constriant the game might not be reponsive on small mobile devices.
 
 ### Fixed bugs
    * Header was not showing in the game playground page. In the cosole it would give error as display undefined.
