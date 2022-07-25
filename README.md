@@ -99,7 +99,7 @@ Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
 
 ## Wireframes / Prototype
   The intial idea was drawn in the paint app. According to that the game was desgined in to the Figma app. From design to developement some changes has occured.
-  <details> <summary> Wireframes / prototypes </summary>
+  <details> <summary> Images </summary>
 
   ![wireframe](/assets/images/wireframe.PNG)
   ![Prototype](/assets/images/Prototype.png)
