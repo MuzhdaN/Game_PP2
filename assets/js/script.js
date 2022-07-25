@@ -25,11 +25,13 @@ function initializeGame() {
     
         //adding fence image at the bottom of each box
         let fence = document.createElement("img");
+        fence.setAttribute("alt","fence with buses image");
         fence.classList.add("fence");
         fence.src = "assets/images/fence.webp";
         box.appendChild(fence);
     
         let character = document.createElement("img");
+        character.setAttribute("alt","Rabbit image");
         character.classList.add("character");
         character.src = "assets/images/bunny.webp";
         character.setAttribute("name", "rab");
