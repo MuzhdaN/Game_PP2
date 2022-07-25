@@ -44,11 +44,11 @@ function startGame() {
     for (let i=0;i<header.length;i+=1){
         header[i].style.display = 'flex';
       }
-      timer = 10;
+      timer = 20;
       result = 0;    
 }
 
-//when cliking the rabbit score will increase by 1
+//when clicking the rabbit score will increase by 1
 window.addEventListener("click", (e) => {
     if(e.target.name === "rab") {
             HIT_SOUND.play();       
@@ -87,10 +87,10 @@ setInterval( function(){
     else{highscore.textContent =max; }  
 }, 1000);
 
+
 function move() {
     setInterval(function() {
         let rab = document.querySelectorAll('.character');
-
         let chose = Math.floor(Math.random() * rab.length);
         rab[chose].style.pointerEvents = "all";
         rab[chose].style.animation = "up 2s ease";
