@@ -79,7 +79,7 @@ a {
 .fence {
     position: absolute;
     pointer-events: none;
-    width: 150px;
+    width: 145px;
     object-fit: cover;
     bottom: -0.5px;
     left: -7px;
@@ -98,6 +98,7 @@ a {
     color: #fff;
     font-size: 20px;
     text-transform: capitalize;
+    position: fixed;
 }
 
 h1 {
@@ -184,7 +185,6 @@ button:hover,
     background-color: #8d8b8b;
     margin: auto;
     padding: 3rem;
-    box-shadow: 2px #fff;
     width: 70%;
     border-radius: 10px;
 }
