@@ -98,12 +98,11 @@ Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
   - The website uses Black and White colors for fonts and #2789b0 for button.
 
 ## Wireframes / Prototype
-  The intial idea was drawn in to the notbook. According to that the game was desgined in to the Figma app.
+  The intial idea was drawn in the paint app. According to that the game was desgined in to the Figma app. From design to developement some changes has occured.
   <details> <summary> Wireframes / prototypes </summary>
 
-  ![Start Game Page](/assets/readme-images/wireframes/home-wireframe.png)
-  ![Game Over Page](/assets/readme-images/wireframes/receipe-wireframe.png)
-  ![Game Play Ground](/assets/readme-images/wireframes/contact-wireframe.png)
+  ![wireframe](/assets/images/wireframe.PNG)
+  ![Prototype](/assets/images/Prototype.png)
 
   </details>
 
@@ -132,7 +131,7 @@ Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
     ![HTML Results](/assets/images/htmlValidator.PNG)
 * W3C CSS Validator (Jigsaw): No error were found
     ![CSS Results](/assets/images/cssValidator.PNG)
-* JSHint JavaScript Validator: Testing the JS code for the first time, there were some errors regarding     semicolon at the end of the line, but they were fixed immediately.
+* JSHint JavaScript Validator: Testing the JS code for the first time, there were some errors regarding semicolon at the end of the line, but they were fixed immediately.
 
     <details> <summary> JSHint Results </summary>
 
@@ -147,8 +146,8 @@ Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
   Phone:
     ![Lighthouse Testing in Mobile](/assets/images/lighthousePhone.PNG)
 
-    * The following bug occured, but rendering css file was not a good option.
-    ![LightHouse Bug](/assets/images/bugsLH.PNG)
+* The following bug occured, but rendering css file was not a good option for this project.
+  ![LightHouse Bug](/assets/images/bugsLH.PNG)
 
 
 ### Fixed bugs
