@@ -1,4 +1,4 @@
-# Game
+# Find The Bunny
 
 ## Purpose of the project
 
