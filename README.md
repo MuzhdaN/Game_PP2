@@ -2,9 +2,12 @@
 
 ## Purpose of the project
 
- Find The Bunny is a game developed for the Full Stack Software Development course in Code Institue as a second project. This is a fun and easy game for the people who want to have a 20seconds of entertainment.
- I have built this game using HTML, CSS and Vanilla JavaScript.
-Visit the live [website](https://muzhdan.github.io/Game_PP2/).
+"Find The Bunny" is a super fun game that anyone can enjoy for a quick 20-second break. It's all about finding a cute bunny hidden somewhere on the screen. With colorful pictures and cool sounds, it's a blast for kids and grown-ups alike.
+
+This was a fun project that let me bring a little joy to people's lives through their screens. So, give it a try and see if you can find the bunny!.
+
+
+Find the bunny [here](https://muzhdan.github.io/Game_PP2/)!
   ![responsive Design Layouts](/assets/images/responisve-img.PNG)
 
 ## Table of Contents
